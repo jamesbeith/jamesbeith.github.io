@@ -1,0 +1,15 @@
+# Site settings
+title: James Beith
+description: >-
+  Software engineer at Octopus Energy, a high-tech energy supplier.
+  Co-founder of Glued to Music, shipping guitar and luthier supplies worldwide.
+baseurl: ""
+url: "https://jamesbeith.github.io"
+permalink: /blog/:title/
+lang: "en_GB"
+timezone: Europe/London
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
