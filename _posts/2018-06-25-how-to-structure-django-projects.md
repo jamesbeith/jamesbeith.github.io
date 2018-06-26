@@ -82,9 +82,11 @@ The key point is that the functions within these modules remain focused on their
 
 The purpose of the interfaces layer is to validate input, call the domain layer, and return output. Similar to the data layer, business logic shouldn’t live in these interfaces, their purpose is to handle I/O.
 
-There’s two HTTP interfaces in this Crema project. One named `store/` that’s public facing, and one named `dashboard/` that’s for company staff (hosted under a separate subdomain). In both interfaces a form validates the input, a view calls the domain layer with this validated input, and then a response is returned as output.
+There’s two HTTP interfaces in this Crema project. One named `store/` that’s public facing, and one named `dashboard/` that’s for company staff (hosted under a separate subdomain). In both interfaces a form validates the input, a view calls the domain layer with this validated input, and then converts the return value (or exception) into the appropriate HTTP response.
 
 A third interface, named `actions/`, is a collection of Django management commands. Similar to the other two interfaces, a `BaseCommand` subclass would use a parser to handle the input, then make a call to the domain layer, and then write some output to `self.stdout`.
+
+These interfaces will import the data layer to retrieve objects from the database. They must not, however, bypass the domain layer and perform any create, update, or delete operations. This means the use of Django’s `ModelForm`, `CreateView`, `UpdateView`, and `DeleteView` is prohibited. Whilst these classes can be convenient, they perform operations on models directly instead of calling upon the domain layer.
 
 More interfaces might come and go but they all follow a similar pattern; calling upon the domain layer to perform operations and handle the business logic.
 
