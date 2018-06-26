@@ -1,6 +1,3 @@
----
----
-
 html {
   position: relative;
   min-height: 100%;
@@ -26,6 +23,29 @@ article {
 
 article > header {
   margin-bottom: 20px;
+}
+
+.highlighter-rouge {
+  margin-bottom: 1em;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.highlighter-rouge pre.highlight {
+  margin: 0;
+  padding: 1em;
+}
+
+.highlight {
+  background: none;
+}
+
+.highlight .nb {
+  color: #000000;
+}
+
+.highlight .p {
+  font-weight: normal;
 }
 
 .footer {
