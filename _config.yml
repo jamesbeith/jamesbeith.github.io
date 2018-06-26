@@ -1,8 +1,7 @@
 # Site settings
 title: James Beith
 description: >-
-  Software engineer at Octopus Energy, a high-tech energy supplier.
-  Co-founder of Glued to Music, shipping guitar and luthier supplies worldwide.
+  Senior Software Engineer at Octopus Energy; Co-founder of Glued to Music; Previously at Realmac Software
 baseurl: ""
 url: "https://www.jamesbeith.co.uk"
 permalink: /blog/:title/
