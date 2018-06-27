@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<article>
+  <header>
+    <h1>{{ page.title | escape }}</h1>
+    <span class="text-muted">{{ page.date | date: "%-d %B %Y" }}</span>
+  </header>
+  {{ content }}
+</article>

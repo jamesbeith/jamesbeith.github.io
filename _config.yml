@@ -1,0 +1,18 @@
+# Site settings
+title: James Beith
+description: >-
+  Senior Software Engineer at Octopus Energy; Co-founder of Glued to Music; Previously at Realmac Software
+baseurl: ""
+url: "https://www.jamesbeith.co.uk"
+permalink: /blog/:title/
+lang: "en_GB"
+timezone: Europe/London
+
+# Build settings
+plugins:
+  - jekyll-assets
+  - jekyll-feed
+  - jekyll-seo-tag
+
+assets:
+  digest: true
