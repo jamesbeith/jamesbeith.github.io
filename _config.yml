@@ -12,6 +12,7 @@ timezone: Europe/London
 plugins:
   - jekyll-assets
   - jekyll-feed
+  - jekyll-seo-tag
 
 assets:
   digest: true
