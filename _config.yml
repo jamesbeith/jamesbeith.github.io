@@ -10,9 +10,5 @@ timezone: Europe/London
 
 # Build settings
 plugins:
-  - jekyll-assets
   - jekyll-feed
   - jekyll-seo-tag
-
-assets:
-  digest: true
