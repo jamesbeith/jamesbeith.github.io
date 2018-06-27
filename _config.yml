@@ -7,6 +7,7 @@ url: "https://www.jamesbeith.co.uk"
 permalink: /blog/:title/
 lang: "en_GB"
 timezone: Europe/London
+repository: jamesbeith/jamesbeith.github.io
 
 # Build settings
 plugins:
