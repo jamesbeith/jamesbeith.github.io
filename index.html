@@ -1,4 +1,15 @@
 ---
-layout: home
+layout: default
 title:  "James Beith"
 ---
+
+{%- if site.posts.size > 0 -%}
+  <ul class="list-unstyled">
+    {%- for post in site.posts -%}
+    <li>
+      <h4><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h4>
+      <span class="text-muted">{{ post.date | date: "%-d %B %Y" }}</span>
+    </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
