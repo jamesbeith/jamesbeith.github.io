@@ -13,3 +13,4 @@ repository: jamesbeith/jamesbeith.github.io
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
