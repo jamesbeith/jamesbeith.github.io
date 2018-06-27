@@ -15,5 +15,3 @@ plugins:
 
 assets:
   digest: true
-  features:
-    liquid: true
