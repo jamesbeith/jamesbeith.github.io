@@ -12,3 +12,8 @@ timezone: Europe/London
 plugins:
   - jekyll-assets
   - jekyll-feed
+
+assets:
+  digest: true
+  features:
+    liquid: true

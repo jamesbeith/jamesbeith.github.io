@@ -102,7 +102,7 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-assets (2.3.2)
+    jekyll-assets (2.4.0)
       concurrent-ruby (~> 1.0)
       extras (~> 0.2)
       fastimage (~> 2.0, >= 1.8)
@@ -259,7 +259,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-assets (= 2.3.2)
+  jekyll-assets
 
 BUNDLED WITH
    1.16.2
