@@ -4,3 +4,7 @@ group :jekyll_plugins do
   gem "github-pages"
   gem "jekyll-assets"
 end
+
+group :deployment do
+  gem "rake"
+end
