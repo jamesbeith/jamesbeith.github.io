@@ -10,4 +10,5 @@ timezone: Europe/London
 
 # Build settings
 plugins:
+  - jekyll-assets
   - jekyll-feed
