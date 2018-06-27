@@ -1,3 +1,10 @@
+language: ruby
+rvm:
+  - 2.5.1
+
+install:
+  - bundle install
+
 deploy:
   provider: pages
   skip-cleanup: true
