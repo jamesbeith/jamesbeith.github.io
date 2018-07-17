@@ -64,14 +64,14 @@ These model modules should only import other model modules, and possibly some ge
 
 ## Domain
 
-The `domain/` directory contains all the business logic files. Each domain area is a directory containing modules of related functionality. Orders, for example, might contain the following; an `engine.py` module with functions related to creating new orders; a `management.py` module for managing existing orders, such as cancelling them; and a `processing.py` module for performing the steps related to dispatching an order.
+The `domain/` directory contains all the business logic files. Each domain area is a directory containing modules of related functionality. Orders, for example, might contain the following; an `engine.py` module with functions related to creating new orders; an `operations.py` module for general CRUD operations on orders, such as cancelling them; and a `processing.py` module for performing the steps related to dispatching orders.
 
 ```plaintext
 domain/
     orders/
         __init__.py
         engine.py
-        management.py
+        operations.py
         processing.py
     __init__.py
 ```
