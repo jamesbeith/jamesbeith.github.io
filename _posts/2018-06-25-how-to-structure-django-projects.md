@@ -53,7 +53,7 @@ data/
     __init__.py
 ```
 
-The `data/` directory contains all the model and migration files for the project. Opt for one model class per module and import all the public model classes into `models/__init__.py`. This results in one simple and consistent import of the data layer throughout the project to access the models. For example:
+The `data/` directory contains all the model and migration files for the project. Opt for one model class per module and ensure that they’re all imported into `models/__init__.py` so Django can discover them and generate migrations. This also results in one simple and consistent import of the data layer throughout the project to access the models. For example:
 
 ```python
 >>> from crema.data import models
